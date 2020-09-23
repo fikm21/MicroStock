@@ -1,7 +1,7 @@
 * {
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    max-width: 100%;
 }
 
 body {
@@ -14,6 +14,7 @@ body {
     position: absolute;
 
 }
+
 
 #header nav {
     margin-left: 25px;
@@ -58,13 +59,14 @@ body {
 
 #banner {
     background-color: #666666;
-    background-image: url("../img/banner.jpg");
+    background-image: url('/img/back.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     color: #d8d8d8;
     padding: 14em 0;
     text-align: center;
+    height: 400px;
 }
 
 #banner:before {
@@ -116,45 +118,56 @@ body {
 
 #banner button {
     height: 50px;
+    align-self: start;
 }
 
-/* Collection */
-.h1 {
+/* ads */
+
+#ads {
+    background-color: orangered;
+    width: 100%;
+    height: 50px;
+}
+
+#ads h4 {
+    color: white;
+    display: grid;
+    margin-left: auto;
+    padding: 5px;
+    text-align: center;
+}
+
+
+.jumbo-ads {
+    background-image: url(/img/question.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    color: whitesmoke;
+    display: block;
+}
+
+.jumbo-ads h1 {
+    justify-content: center;
+    margin-left: 475px;
+    padding-top: 50px;
+}
+
+.jumbo-ads p {
+    justify-content: center;
+    margin-left: 425px;
+}
+
+/* content */
+
+.container h1 {
     margin-top: 50px;
-}
 
-.profile-card-1 .card-img-block {
-    width: 91%;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
-
-}
-
-.profile-card-1 .card-img-block img {
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
-}
-
-.profile-card-1 h5 {
-    color: rgb(0, 153, 255);
-    font-weight: 600;
-}
-
-.profile-card-1 p {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.profile-card-1:hover {
-    background-color: #66666665;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
 }
 
 #popular .row {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
 
 .profile-card-2 {
@@ -190,22 +203,6 @@ body {
     transition: all 1s ease;
 }
 
-#ads {
-    background-color: orangered;
-    border-radius: 5px;
-    height: 40px;
-    margin-left: auto;
-    margin-top: 20px;
-}
-
-#ads h4 {
-    color: white;
-    display: grid;
-    justify-items: center;
-    margin-left: auto;
-    padding: 5px;
-}
-
 /* login */
 
 #form {
@@ -219,11 +216,12 @@ body {
 }
 
 .bg-image {
-    background-image: url('/img/art.jpg');
+    background-image: url("/img/girl.png");
     background-size: cover;
     background-position: center center;
-    width: max-content;
+    width: fit-content;
 }
+
 
 /* footer */
 footer {

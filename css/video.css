@@ -15,6 +15,7 @@ body {
 
 }
 
+
 #header nav {
     margin-left: 25px;
     margin-right: 25px;
@@ -65,6 +66,7 @@ body {
     color: #d8d8d8;
     padding: 14em 0;
     text-align: center;
+
 }
 
 #banner:before {
@@ -116,50 +118,151 @@ body {
 
 #banner button {
     height: 50px;
+    align-self: start;
 }
 
-/* Collection */
-.h1 {
-    margin-top: 50px;
+/* ads */
+
+#ads {
+    background-color: orangered;
+    width: 100%;
+    height: 50px;
 }
 
-.profile-card-1 .card-img-block {
-    width: 91%;
-    margin: 0 auto;
-    position: relative;
-    top: -20px;
-
+#ads h4 {
+    color: white;
+    display: grid;
+    margin-left: auto;
+    padding: 5px;
+    text-align: center;
 }
 
-.profile-card-1 .card-img-block img {
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
-}
-
-.profile-card-1 h5 {
-    color: rgb(0, 153, 255);
-    font-weight: 600;
-}
-
-.profile-card-1 p {
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.profile-card-1:hover {
+.jumbo-ads {
     background-color: #66666665;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+
+    display: block;
+}
+
+.jumbo-ads h1 {
+    justify-content: center;
+    margin-left: 475px;
+    padding-top: 50px;
+}
+
+.jumbo-ads p {
+    justify-content: center;
+    margin-left: 425px;
+}
+
+/* content */
+.hover {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+.hover-overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    transition: all 0.4s;
+}
+
+.hover img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s;
+}
+
+.hover-content {
+    position: relative;
+    z-index: 99;
+}
+
+.hover-4 img {
+    width: 110%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hover-4 .hover-overlay {
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 90;
+}
+
+.hover-4-title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 3rem;
+    z-index: 99;
+}
+
+.hover-4-description {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    text-align: right;
+    border-right: 3px solid #fff;
+    padding: 0 1rem;
+    z-index: 99;
+    transform: translateX(-1.5rem);
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+@media (min-width: 992px) {
+    .hover-4-description {
+        width: 50%;
+    }
+}
+
+.hover-4:hover img {
+    width: 100%;
+}
+
+.hover-4:hover::after {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-4:hover .hover-4-description {
+    opacity: 1;
+    transform: none;
+}
+
+.hover-4:hover .hover-overlay {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.container h1 {
+    margin-top: 50px;
+
 }
 
 #popular .row {
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 }
+
+.profile-card-2 .card-img-block img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
+}
+
+
 
 .profile-card-2 {
     border: none;
-    background-color: #e9e6e6dc;
+    background-color: #fff;
 }
 
 
@@ -170,12 +273,8 @@ body {
 
 }
 
-.profile-card-2 .card-img-block img {
-    border-radius: 5px;
-}
-
 .profile-card-2 h5 {
-    color: rgb(0, 153, 255);
+    color: #2e2d2d;
     font-weight: 600;
 }
 
@@ -188,22 +287,6 @@ body {
     opacity: 0.8;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
-}
-
-#ads {
-    background-color: orangered;
-    border-radius: 5px;
-    height: 40px;
-    margin-left: auto;
-    margin-top: 20px;
-}
-
-#ads h4 {
-    color: white;
-    display: grid;
-    justify-items: center;
-    margin-left: auto;
-    padding: 5px;
 }
 
 /* login */
@@ -219,11 +302,12 @@ body {
 }
 
 .bg-image {
-    background-image: url('/img/art.jpg');
+    background-image: url("/img/fishing.jpg");
     background-size: cover;
     background-position: center center;
-    width: max-content;
+    width: fit-content;
 }
+
 
 /* footer */
 footer {
