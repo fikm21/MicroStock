@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e9e6e6dc;
+    background-color: #e9e6e6;
 }
 
 /* navbar */
@@ -137,24 +137,24 @@ body {
     text-align: center;
 }
 
-.jumbo-ads {
+.jumbotron {
     background-color: #66666665;
     background-size: cover;
     background-position: center;
     height: 250px;
-
     display: block;
+    margin-top: 20px;
 }
 
 .jumbo-ads h1 {
     justify-content: center;
-    margin-left: 475px;
-    padding-top: 50px;
+    text-align: center;
+
 }
 
 .jumbo-ads p {
     justify-content: center;
-    margin-left: 425px;
+    text-align: center;
 }
 
 /* content */
@@ -254,10 +254,6 @@ body {
     margin-right: auto;
 }
 
-.profile-card-2 .card-img-block img {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
-}
-
 
 
 .profile-card-2 {
@@ -271,6 +267,14 @@ body {
     margin: 0 auto;
     position: relative;
 
+}
+
+.profile-card-2 .card-img-block img {
+    background-size: cover;
+    width: fit-content;
+    border-radius: 5px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
 }
 
 .profile-card-2 h5 {

@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e9e6e6dc;
+    background-color: #e9e6e6;
 }
 
 /* navbar */
@@ -138,24 +138,25 @@ body {
 }
 
 
-.jumbo-ads {
+.jumbotron {
     background-image: url(/img/question.jpg);
     background-size: cover;
     background-position: center;
     height: 250px;
     color: whitesmoke;
     display: block;
+    margin-top: 20px;
 }
 
 .jumbo-ads h1 {
     justify-content: center;
-    margin-left: 475px;
-    padding-top: 50px;
+    text-align: center;
+
 }
 
 .jumbo-ads p {
     justify-content: center;
-    margin-left: 425px;
+    text-align: center;
 }
 
 /* content */
@@ -168,6 +169,43 @@ body {
 #popular .row {
     margin-left: auto;
     margin-right: auto;
+}
+
+.profile-card-1 {
+    border: none;
+    background-color: #e9e6e6;
+
+}
+
+
+.profile-card-1 .card-img-block {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.profile-card-1 .card-img-block img {
+    background-size: cover;
+    width: fit-content;
+    border-radius: 5px;
+    height: 400px;
+}
+
+.profile-card-1 h5 {
+    color: rgb(0, 153, 255);
+    font-weight: 600;
+}
+
+.profile-card-1 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.profile-card-1 .card-img-block img:hover {
+    opacity: 0.8;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .profile-card-2 {

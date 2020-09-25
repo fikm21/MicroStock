@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #e9e6e6dc;
+    background-color: #e9e6e6;
 }
 
 /* navbar */
@@ -137,24 +137,26 @@ body {
     text-align: center;
 }
 
-.jumbo-ads {
+
+.jumbotron {
     background-image: url(/img/question.jpg);
-    background-size: cover;
+    background-size: auto;
     background-position: center;
     height: 250px;
     color: whitesmoke;
     display: block;
+    margin-top: 20px;
 }
 
 .jumbo-ads h1 {
     justify-content: center;
-    margin-left: 475px;
-    padding-top: 50px;
+    text-align: center;
+
 }
 
 .jumbo-ads p {
     justify-content: center;
-    margin-left: 425px;
+    text-align: center;
 }
 
 /* content */
