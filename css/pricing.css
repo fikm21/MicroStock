@@ -173,3 +173,19 @@ td:first-child {
 .fa-times {
     color: darkred;
 }
+
+/* footer */
+footer {
+    margin-top: 50px;
+    padding-top: 10px;
+    color: white;
+}
+
+footer a {
+    font-style: none;
+    color: #161515d2;
+}
+
+footer a:hover {
+    color: #9e9d9d;
+}

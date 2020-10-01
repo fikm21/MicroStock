@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/image-detail.css">
+    <script src="/js/index.js"></script>
+    <title>Hello</title>
+
+
+</head>
+
+<body>
+    <header id="header" class="bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand font-weight-bold" id="brand" href="index.html">MicroStock</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="image.html">Photo</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="vector.html">Vector</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="audio.html">Audio</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <a href="pricing.html" class="nav-link">Pricing</a>
+                    <a href="login.html" class="btn btn-outline-light my-3 my-sm-0">Masuk</a>
+                    <a href="signup.html" class="btn btn-light my-3 my-sm-0">Daftar</a>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- search -->
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <div class="row">
+                <div class="col-lg-11 card-margin">
+                    <div class="card search-form">
+                        <form id="search-form">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="row no-gutters">
+                                        <div class="col-lg-2 col-md-2 col-sm-10 p-0">
+                                            <select class="form-control" id="exampleFormControlSelect1">
+                                                <option>Photo</option>
+                                                <option>Video</option>
+                                                <option>Audio</option>
+                                                <option>Vektor</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
+                                            <input type="text" placeholder="Search" class="form-control" id="search"
+                                                name="search">
+                                        </div>
+                                        <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
+                                            <button type="submit" class="btn btn-base">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" class="fab fa-search">
+                                                    <circle cx="11" cy="11" r="8"></circle>
+                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="row row-cols-2 ">
+            <div class="col-lg-8 col-md-7 col-sm-10 mt-5">
+                <div class="card card-detail">
+                    <div class="  bg-light  card-image">
+                        <a href="" data-toggle="modal" data-target="#staticBackdrop">
+                            <img src="img/cat.jpg" alt="" id="myImg">
+                        </a>
+                        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-headers">
+                                        <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true" style="font-size: 30px;">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-image">
+                                        <img src="img/cat.jpg" alt="" id="myImg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h1 class="display-4 align-items-center font-weight-bold watermark" id="myImg">MicroStock
+                        </h1>
+                    </div>
+                    <div class="card-footer card-icon">
+                        <a href="" class="fa fa-heart  icon-item "></a>
+
+                        <a href="" class="fa fa-download icon-item "></a>
+
+                        <a href="" class="fa fa-share icon-item "></a>
+
+                    </div>
+                    <div class="card-ket">
+                        <span>save</span>
+                        <span>try</span>
+                        <span>share</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col-sm-2 p-3 mt-auto mb-auto">
+                <div class="card justify-content-center card-detail">
+                    <div class="modal-header card-dropdown">
+                        <div class="dropdown">
+                            <button type="button" class="btn  dropdown-toggle" data-toggle="dropdown">
+                                Dropdown button
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="container">
+                            <p style="color: #666666;">select license type</p>
+                            <form action="" class=" form-group">
+                                <div class="custom-control custom-radio custom-control-block">
+                                    <input type="radio" class="custom-control-input" id="customRadio" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="customRadio">Standard License</label>
+                                    <p style="color: #666666;" class=" font-weight-bold">Staring at $0.22/image</p>
+                                    <p style="margin-top:-10px; font-size:12px;">Limited usage in print, advertising,
+                                        and packaging.
+                                        Unlimited web distribution.</p>
+                                </div>
+                                <div class="custom-control custom-radio custom-control-block">
+                                    <input type="radio" class="custom-control-input" id="customRadio2" name="example"
+                                        value="customEx">
+                                    <label class="custom-control-label" for="customRadio2">Premium Licence</label>
+                                    <p style="color: #666666;" class=" font-weight-bold">Staring at $67.96/image</p>
+                                    <p style="margin-top:-10px; font-size:12px;">Unlimited usage in print, advertising,
+                                        packaging, and merchandising. Unlimited web distribution.</p>
+                                </div>
+                            </form>
+                            <a href="">What's an Premium Licence ?</a>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <p style="color: #666666;">get your Image </p>
+                        <a href="" class=" btn-danger p-2 d-flex justify-content-center download text-decoration-none">
+                            <i class="fa fa-download p-1"></i> Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- maker -->
+        <div class="media p-1">
+            <img src="/img/girl.png" alt="John Doe" class="mr-3 mt-3 rounded-circle" style="width:80px;">
+            <div class="media-body">
+                <h4>Ini judul Gambar <small>
+                        <p style="font-size: small;">Posted on February 19, 2020</p>
+                    </small></h4>
+                <h5>By <a href="" class=" text-decoration-none">Orang</a></h5>
+            </div>
+        </div>
+        <!-- Categori -->
+        <div class=" mt-5">
+            <h1 class="h2 font-weight-bold">Cari Lebih banyak Kategori </h1>
+            <div class="row row-cols-5">
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Animals</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Fashion</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">View</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Food</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Sports</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Water</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Wheater</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Human</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Alien</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="col col-lg-2 col-md-2 mt-2">
+                        <a href="gallery.html">Summer</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Grid Musonary -->
+        <h1 class="h2 font-weight-bold mt-5">Similiar Image Categories</h1>
+        <div class="rows">
+            <div class="masonry">
+
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/lighthouse.jpg" class="img">
+                    </a>
+
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul sangat panjang dengan gambar yang sangat bagus</p>
+                        </div>
+                        <div class="link list-inline-item save">
+
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/back.png" class="img">
+                    </a>
+
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/question.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/cat.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/concert.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/natural.png" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item save"></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="" class="h5 btn-outline-dark text-center mt-5 see">See All</a>
+        </div>
+        <!-- Grid Musonary -->
+        <h1 class="h2 font-weight-bold mt-5">More From Artis</h1>
+        <div class="rows">
+            <div class="masonry">
+
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/lighthouse.jpg" class="img">
+                    </a>
+
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul sangat panjang dengan gambar yang sangat bagus</p>
+                        </div>
+                        <div class="link list-inline-item save">
+
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/back.png" class="img">
+                    </a>
+
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/question.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/cat.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/concert.jpg" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item "></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="image-detail.html">
+                        <img src="img/natural.png" class="img">
+                    </a>
+                    <div class="button-overlay">
+                        <div class="judul-overlay">
+                            <p class=" text-light">ini judul</p>
+                        </div>
+                        <div class="link list-inline-item save">
+                            <a href="" class="fa fa-heart  link-item save"></a>
+                            <span>
+                                <a href="" class=" text-decoration-none text-light"> Save</a>
+                                <a href="" class=" text-decoration-none text-light">Download</a>
+                                <a href="" class=" text-decoration-none text-light">Similiar</a>
+                            </span>
+                            <a href="" class="fa fa-download link-item save"></a>
+                            <a href="" class="fa fa-camera link-item "></a>
+                            <a href="" class="btn btn-primary font-weight-bold link-button ">Buy</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="" class="h5 btn-outline-dark text-center mt-5 see">See All</a>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <footer class="fdb-block footer-large bg-dark">
+        <div class="container">
+            <div class="row align-items-top text-center">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 text-sm-left">
+                    <h4><strong>Content</strong></h4>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link" href="#">Images</a>
+                        <a class="nav-link" href="#">Video</a>
+                        <a class="nav-link" href="#">Audio</a>
+                        <a class="nav-link" href="#">Tools</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-5 mt-sm-0 text-sm-left">
+                    <h4><strong>Our Company</strong></h4>
+                    <nav class="nav flex-column">
+                        <a class="nav-link active" href="#">Privacy Policy</a>
+                        <a class="nav-link" href="#">Terms</a>
+                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#">Support</a>
+                    </nav>
+                </div>
+
+                <div class="col-12 col-md-4 col-lg-3 text-md-left mt-5 mt-md-0">
+                    <h4><strong>About Us</strong></h4>
+                    <p>offers the best quality, royalty free stock images, photos, vectors, illustrations, footage,
+                        video, and music for nearly any application. From illustrations to vectors, when you need the
+                        perfect stock image for your website or blog, we have you covered.</p>
+                </div>
+
+                <div class="col-12 col-lg-2 ml-auto text-lg-left mt-4 mt-lg-0">
+                    <h4><strong>Follow Us</strong></h4>
+                    <p class="lead">
+                        <a href="#" class="mx-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" class="mx-2"><i class="fab fa-google" aria-hidden="true"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center">
+                    © 2020 Jagad Creative. All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

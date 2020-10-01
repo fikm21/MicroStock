@@ -115,32 +115,90 @@ body {
     align-self: start;
 }
 
-/* Jumbo Categori */
-.jumbotron {
-    background-image: url(/img/natural.png);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    margin-top: 20px;
-    color: #ffffff;
+/* card image */
+
+.row {
+    margin-bottom: 20px;
 }
 
+.card-detail .card-image {
+    width: 100%;
+    position: relative;
 
+}
+
+.modal-content .modal-image {
+    width: 100%;
+
+}
+
+.card-detail .card-image img {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-detail .card-image h1 {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card-detail .watermark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.301);
+    opacity: 5px;
+}
+
+.card-detail .card-icon {
+    font-size: 20px;
+    margin-left: auto;
+    background-color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.card-icon .icon-item {
+    background-color: #fff;
+    border: none;
+    color: #666666;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.icon-item:hover {
+    color: black;
+}
+
+.card-ket {
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: -12px;
+    margin-bottom: 10px;
+}
+
+.card-ket span {
+    color: #666666;
+    margin-right: 15px;
+}
+
+.modal-body .download {
+    font-size: large;
+    border-radius: 15px;
+}
 
 /* The Masonry Container */
-.rows {
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 
 .masonry {
-    margin: 1em auto;
-    max-width: auto;
+    max-width: 100%;
+    max-height: 50%;
     column-gap: 5px;
-    column-count: 4;
+    column-count: 3;
+    max-block-size: 500px;
 
 }
-
 
 
 /* The Masonry hover */
@@ -148,13 +206,13 @@ body {
     background: #fff;
     margin-top: 5px;
     position: relative;
-
+    max-width: 460px;
 }
 
-.image {
-
-    width: auto;
-    height: auto;
+.item img {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
 }
 
 .button-overlay {
@@ -240,7 +298,7 @@ span {
     background-color: #666666;
     border-radius: 15px;
     top: 50%;
-    left: 48%;
+    left: 50%;
     width: auto;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -250,32 +308,40 @@ span {
 .link .link-item {
     font-size: 15px;
     color: #fff;
-    width: 25px;
-    height: 25px;
-    padding-left: 25px;
+    padding-left: 10px;
     text-decoration: none;
 
 }
 
 .link .link-button {
     position: relative;
-    margin-left: 25px;
+    margin-left: 10px;
     border-radius: 15px;
 }
 
+.rows .see {
+    border: 1px solid rgb(32, 32, 32);
+    border-radius: 25px;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 45%;
+    font-weight: bold;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 
 
 /* Masonry on large screens */
 @media only screen and (min-width: 1024px) {
     .masonry {
-        column-count: 4;
+        column-count: 3;
     }
 }
 
 /* Masonry on medium-sized screens */
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
     .masonry {
-        column-count: 3;
+        column-count: 2;
     }
 }
 
@@ -285,6 +351,7 @@ span {
         column-count: 1;
     }
 }
+
 
 
 /* footer */
