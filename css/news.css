@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e9e6e6;
+
+}
+
+
+
+/* responsive */
+@media screen and (max-width: 800px) {
+    aside {
+        float: left;
+        width: 100%;
+        padding: 0;
+    }
+
+    #content {
+        width: 100%;
+        float: left;
+    }
+
+    #rumus {
+        width: 400px;
+        height: 200;
+    }
+
+}
+
+/* navbar */
+#header {
+    width: 100%;
+    position: absolute;
+
+}
+
+#header nav {
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 10px;
+}
+
+#header nav .nav-link {
+    color: #d8d8d8;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+#header nav .nav-link:hover {
+    color: white;
+    background-color: #66666665;
+
+}
+
+#header nav li {
+    color: black;
+}
+
+#header nav form a {
+    margin-left: 10px;
+}
+
+#header #brand {
+    font-size: 25px;
+    color: white;
+}
+
+#header::before {
+    background-color: white;
+    color: black;
+}
+
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: orange;
+}
+
+
+/* main */
+
+
+main {
+    padding: 20px;
+    overflow: auto;
+}
+
+#content {
+    float: left;
+    width: 80%;
+
+}
+
+
+
+aside {
+    float: right;
+    width: 18%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+aside .foto {
+    width: 120px;
+    height: 150px;
+    border-radius: 20px;
+    margin-left: 45px;
+
+}
+
+aside a {
+    margin-left: 10px;
+}
+
+.box {
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    overflow: auto;
+    background-color: #f1f1f1;
+}
+
+.box img {
+    width: 500px;
+    max-height: 500px;
+    object-fit: cover;
+    float: left;
+    padding-right: 20px;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.box .more {
+    border-radius: 15px;
+    margin-top: auto;
+    font-weight: bold;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+#rumus {
+    width: 80%;
+    height: 600px;
+    object-fit: cover;
+    float: left;
+    padding-right: 20px;
+    border-radius: 10px;
+    object-position: center;
+    margin-left: 100px;
+}
+
+/* footer */
+footer {
+    background-color: #0038BA;
+    padding: 20px;
+    text-align: center;
+    color: white;
+
+}
