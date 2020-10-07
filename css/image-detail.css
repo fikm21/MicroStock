@@ -324,7 +324,7 @@ span {
     border-radius: 25px;
     padding: 10px;
     text-decoration: none;
-    margin-left: 45%;
+    margin-left: 42%;
     font-weight: bold;
     padding-left: 50px;
     padding-right: 50px;
@@ -363,9 +363,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #161515d2;
+    color: #6e6e6e;
 }
 
 footer a:hover {
-    color: #9e9d9d;
+    color: #d1d1d1;
 }

@@ -189,7 +189,7 @@ body {
     background-size: cover;
     width: fit-content;
     border-radius: 5px;
-    height: 400px;
+    max-height: 420px;
 }
 
 .profile-card-1 h5 {
@@ -246,6 +246,7 @@ body {
 #form {
     margin-top: 30px;
     width: 100%;
+    padding-left: 25px;
 }
 
 .login,
@@ -270,9 +271,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #161515d2;
+    color: #6e6e6e;
 }
 
 footer a:hover {
-    color: #9e9d9d;
+    color: #d1d1d1;
 }

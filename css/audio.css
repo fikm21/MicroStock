@@ -59,7 +59,7 @@ body {
 
 #banner {
     background-color: #666666;
-    background-image: url('/img/minimal.png');
+    background-image: url('/img/palace.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -90,6 +90,7 @@ body {
 
 
 #banner h2 {
+    color: #444;
     font-size: 3.5em;
     line-height: 1em;
     margin: 0 0 0.5em 0;
@@ -501,7 +502,7 @@ body {
 }
 
 .hover-4 img {
-    width: 110%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -586,6 +587,7 @@ body {
 #form {
     margin-top: 30px;
     width: 100%;
+    padding-left: 25px;
 }
 
 .login,
@@ -610,9 +612,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #161515d2;
+    color: #6e6e6e;
 }
 
 footer a:hover {
-    color: #9e9d9d;
+    color: #d1d1d1;
 }

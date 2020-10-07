@@ -17,13 +17,13 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <script src="/js/index.js"></script>
-    <title>MicroStock</title>
+    <title>DropKit</title>
 </head>
 
 <body>
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand font-weight-bold" id="brand" href="#">MicroStock</a>
+            <a class="navbar-brand font-weight-bold" id="brand" href="#">DropKit</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,6 +43,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="audio.html">Audio</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle dr" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ouch!
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">News</a>
+                            <a class="dropdown-item" href="#">Article</a>
+                            <a class="dropdown-item" href="#">Career</a>
+                            <a class="dropdown-item" href="#">jdea</a>
+                        </div>
+                    </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
                     <a href="pricing.html" class="nav-link">Pricing</a>
@@ -56,7 +68,7 @@
     <!-- Banner -->
     <section id="banner">
         <div class="inner">
-            <h2>MicroStock</h2>
+            <h2>DropKit</h2>
             <p>Kami menyediakan berbagai kebutuhan anda dalam dunia industri creative mulai dari photo, video, audio ,
                 dll</p>
             <div class="row">
@@ -68,11 +80,13 @@
                                     <div class="col-12">
                                         <div class="row no-gutters">
                                             <div class="col-lg-2 col-md-2 col-sm-10 p-0">
-                                                <select class="form-control" id="exampleFormControlSelect1">
+                                                <select class=" custom-select btn-outline-secondary"
+                                                    id="exampleFormControlSelect1">
                                                     <option>Photo</option>
                                                     <option>Video</option>
                                                     <option>Audio</option>
                                                     <option>Vektor</option>
+                                                    <option>All</option>
                                                 </select>
                                             </div>
                                             <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
@@ -106,45 +120,43 @@
         <div class="row">
             <div class="col-md-4 mt-5">
                 <div class="card profile-card-1">
-                    <div class="card-img-block">
-                        <a href="image.html">
+                    <a href="image.html" class=" text-decoration-none">
+                        <div class="card-img-block">
                             <img class="card-img-top" src="img/photo-1.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Photo</h5>
-                        <p class="card-text">Kumpulan Foto-foto dengan kualitas terbaik </p>
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Photo</h5>
+                            <p class="card-text">Kumpulan Foto-foto dengan kualitas terbaik </p>
 
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 mt-5">
                 <div class="card profile-card-1">
-                    <div class="card-img-block">
-                        <a href="video.html">
+                    <a href="video.html" class=" text-decoration-none">
+                        <div class="card-img-block">
                             <img class="card-img-top" src="img/photo-2.jpg" alt="Card image cap">
-                        </a>
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Video</h5>
+                            <p class="card-text">Berbagai video dan footage dengan kualitas sampai 4k</p>
 
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Video</h5>
-                        <p class="card-text">Berbagai video dan footage dengan kualitas sampai 4k</p>
-
-                    </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             <div class="col-md-4 mt-5">
                 <div class="card profile-card-1">
-                    <div class="card-img-block">
-                        <a href="audio.html">
+                    <a href="audio.html" class=" text-decoration-none">
+                        <div class="card-img-block">
                             <img class="card-img-top" src="img/photo-3.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Audio</h5>
-                        <p class="card-text">Kumpulan audio untuk bahan editing dan berbagai macam lagi</p>
-
-                    </div>
+                        </div>
+                        <div class="card-body pt-0">
+                            <h5 class="card-title">Audio</h5>
+                            <p cass="card-text">Kumpulan audio untuk bahan editing dan berbagai macam lagi</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -166,9 +178,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Travel</h5>
+                        <p class="card-text">Photo-photo from around the globe</p>
                     </div>
                 </div>
             </div>
@@ -180,9 +191,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Animals</h5>
+                        <p class="card-text">From exotic beast favorite pets</p>
                     </div>
                 </div>
             </div>
@@ -194,9 +204,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">People</h5>
+                        <p class="card-text">Fascinating lifestyle in stock photos and graphics</p>
                     </div>
                 </div>
             </div>
@@ -208,9 +217,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Business</h5>
+                        <p class="card-text">Stock photos showing wrokfrom all angles</p>
                     </div>
                 </div>
             </div>
@@ -222,9 +230,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Backgrounds</h5>
+                        <p class="card-text">Beautiful backgrounds for print, web and more</p>
                     </div>
                 </div>
             </div>
@@ -236,9 +243,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Place</h5>
+                        <p class="card-text">Some Beautiful building from around globe</p>
                     </div>
                 </div>
             </div>
@@ -264,9 +270,8 @@
                         </a>
                     </div>
                     <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                        <h5 class="card-title">Rustic retreats</h5>
+                        <p class="card-text">Cozy holiday getways in high-quality stock photography</p>
                     </div>
                 </div>
             </div>
@@ -283,68 +288,56 @@
     <div class="container">
         <h1 class="h1 font-weight-bold">Explore Lebih Banyak Video </h1>
     </div>
-
-
     <section id="popular">
-        <div class="row">
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <a href="gallery.html">
-                            <img class="card-img-top" src="img/concert.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+        <div class="row row-cols-4">
+            <div class="col-lg-3 mb-3 mb-lg-0 mt-3 p-2">
+                <div class="hover hover-4 text-white rounded"><img src="img/palace.jpg" alt="">
+                    <a href="gallery.html">
+                        <div class="hover-overlay"></div>
+                    </a>
+                    <div class="hover-4-content">
+                        <h5 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                class="font-weight-light">Video </span>Palace</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <a href="gallery.html">
-                            <img class="card-img-top" src="img/raspberries.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+            <div class="col-lg-3 mb-3 mb-lg-0 mt-3 p-2">
+                <div class="hover hover-4 text-white rounded"><img src="img/night.jpg" alt="">
+                    <a href="gallery.html">
+                        <div class="hover-overlay"></div>
+                    </a>
+                    <div class="hover-4-content">
+                        <h5 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                class="font-weight-light">Video </span>People</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <a href="gallery.html">
-                            <img class="card-img-top" src="img/skateboard.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+            <div class="col-lg-3 mb-3 mb-lg-0 mt-3 p-2">
+                <div class="hover hover-4 text-white rounded"><img src="img/cat.jpg" alt="">
+                    <a href="gallery.html">
+                        <div class="hover-overlay"></div>
+                    </a>
+                    <div class="hover-4-content">
+                        <h5 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                class="font-weight-light">Video </span>Animals</h5>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mt-4">
-                <div class="card profile-card-2">
-                    <div class="card-img-block">
-                        <a href="gallery.html">
-                            <img class="card-img-top" src="img/ice.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="card-body pt-0">
-                        <h5 class="card-title">Summer</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+            <div class="col-lg-3 mb-3 mb-lg-0 mt-3 p-2">
+                <div class="hover hover-4 text-white rounded"><img src="img/pumpkin.jpg" alt="">
+                    <a href="gallery.html">
+                        <div class="hover-overlay"></div>
+                    </a>
+                    <div class="hover-4-content">
+                        <h5 class="hover-4-title text-uppercase font-weight-bold mb-0"><span
+                                class="font-weight-light">Video </span>Fruits</h5>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+
     <!-- form -->
     <section id="form">
         <div class="container-fluid">
@@ -403,10 +396,11 @@
                     <h4><strong>Content</strong></h4>
                     <nav class="nav flex-column">
                         <a class="nav-link active" href="#">Home</a>
-                        <a class="nav-link" href="#">Images</a>
-                        <a class="nav-link" href="#">Video</a>
-                        <a class="nav-link" href="#">Audio</a>
-                        <a class="nav-link" href="#">Tools</a>
+                        <a class="nav-link" href="image.html">Images</a>
+                        <a class="nav-link" href="vector.html">Vectors</a>
+                        <a class="nav-link" href="video.html">Video</a>
+                        <a class="nav-link" href="audio.html">Audio</a>
+
                     </nav>
                 </div>
 
@@ -433,7 +427,7 @@
                         <a href="#" class="mx-2"><i class="fab fa-twitter" aria-hidden="true"></i></a>
                         <a href="#" class="mx-2"><i class="fab fa-facebook" aria-hidden="true"></i></a>
                         <a href="#" class="mx-2"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#" class="mx-2"><i class="fab fa-google" aria-hidden="true"></i></a>
+                        <a href="#" class="mx-2"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                     </p>
                 </div>
             </div>

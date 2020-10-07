@@ -194,6 +194,7 @@ body {
 }
 
 .profile-card-2 p {
+    margin-top: -10px;
     font-size: 14px;
     font-weight: 300;
 }
@@ -209,6 +210,7 @@ body {
 #form {
     margin-top: 30px;
     width: 100%;
+    padding-left: 25px;
 }
 
 .login,
@@ -233,9 +235,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #161515d2;
+    color: #6e6e6e;
 }
 
 footer a:hover {
-    color: #9e9d9d;
+    color: #d1d1d1;
 }

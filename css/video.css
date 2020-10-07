@@ -138,7 +138,7 @@ body {
 }
 
 .jumbotron {
-    background-color: #66666665;
+    background-image: url(/img/triangle.png);
     background-size: cover;
     background-position: center;
     height: 250px;
@@ -273,7 +273,7 @@ body {
     background-size: cover;
     width: fit-content;
     border-radius: 5px;
-    height: 400px;
+    max-height: 420px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.63);
 }
 
@@ -298,6 +298,7 @@ body {
 #form {
     margin-top: 30px;
     width: 100%;
+    padding-left: 25px;
 }
 
 .login,
@@ -322,9 +323,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #161515d2;
+    color: #6e6e6e;
 }
 
 footer a:hover {
-    color: #9e9d9d;
+    color: #d1d1d1;
 }
