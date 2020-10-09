@@ -9,16 +9,33 @@ body {
 }
 
 /* navbar */
+.my-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 100vh;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #header {
+    z-index: 10;
     width: 100%;
     position: absolute;
-
+    background-image: linear-gradient(#13131393, rgba(250, 250, 250, 0));
 }
 
 #header nav {
     margin-left: 25px;
     margin-right: 25px;
     padding: 10px;
+
 }
 
 #header nav .nav-link {
@@ -51,23 +68,138 @@ body {
     color: black;
 }
 
+.primary {
+    list-style: none;
+    position: relative;
+
+}
+
+.primary:after {
+    clear: both;
+}
+
+.primary:before,
+.primary:after {
+    content: " ";
+    display: table;
+}
+
+/* prime */
+ul.primary li a {
+    color: #d8d8d8;
+    font-size: 15px;
+    display: block;
+    margin-left: 25px;
+    text-decoration: none;
+
+
+}
+
+ul.primary li:last-child a {
+    border-right: none;
+}
+
+/* subs */
+ul.sub {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.sub li {
+    float: left;
+    margin: 0;
+}
+
+ul.sub li a {
+    border-bottom: 2px solid orangered;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 5px 150px 5px 15px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 0px;
+    color: #000;
+}
+
+
+ul.sub li a:hover {
+    color: #272727;
+    background-color: #d1d1d1;
+
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+    display: block;
+    color: white;
+    background-color: #66666600;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover {
+    color: white;
+
+    text-shadow: none;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    li {
+        float: none;
+    }
+
+    ul.primary li:hover a {
+        color: white;
+        background-color: #ebebeb;
+        text-shadow: 1px 1px #000;
+    }
+
+    ul.primary li:hover ul {
+        display: block;
+        color: white;
+        background-color: #66666665;
+    }
+
+    ul.sub {
+        display: block;
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    ul.sub li a {
+        background: #272727;
+        border: none;
+        color: #8B8B8B;
+    }
+
+    ul.sub li a:hover {
+        color: #ccc;
+        background: none;
+    }
+}
+
 
 
 
 /* Banner */
 
-#banner {
-    background-color: #666666;
-    background-image: url("../img/banner.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    color: #d8d8d8;
-    padding: 14em 0;
+.banner {
+    color: whitesmoke;
     text-align: center;
+    padding-top: 15em;
+    position: relative;
 }
 
-#banner:before {
+
+.banner:before {
     content: '';
     position: relative;
     left: 0;
@@ -77,46 +209,48 @@ body {
     background: rgba(64, 72, 80, 0.25);
 }
 
-#banner .inner {
+.banner .inner {
     position: relative;
     z-index: 1;
 }
 
-#banner .inner :last-child {
+.banner .inner :last-child {
     margin-bottom: 0;
 }
 
 
-#banner h2 {
+.banner h2 {
     font-size: 3.5em;
     line-height: 1em;
     margin: 0 0 0.5em 0;
     padding: 0;
 }
 
-#banner p {
+.banner p {
     font-size: 1.5em;
     margin-bottom: 2em;
 }
 
-#banner .row {
+.banner .row {
     width: auto;
     position: relative;
     justify-content: center;
     height: 50px;
 }
 
-#banner select {
+.banner select {
     height: 50px;
 }
 
-#banner input {
+.banner input {
     height: 50px;
 }
 
-#banner button {
+.banner button {
     height: 50px;
 }
+
+
 
 
 

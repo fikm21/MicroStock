@@ -15,99 +15,257 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/image.css">
     <script src="/js/index.js"></script>
-    <title>Hello</title>
+    <title>DropKit</title>
 
 </head>
 
 <body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand font-weight-bold" id="brand" href="index.html">DropKit</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <div class="header" id="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand font-weight-bold" id="brand" href="#">DropKit</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link text-light" href="image.html">Photo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="vector.html">Vector</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="audio.html">Audio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle dr" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Ouch!
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="news.html">News</a>
-                            <a class="dropdown-item" href="#">Article</a>
-                            <a class="dropdown-item" href="#">Career</a>
-                            <a class="dropdown-item" href="#">jdea</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="pricing.html" class="nav-link">Pricing</a>
-                    <a href="login.html" class="btn btn-outline-light my-3 my-sm-0">Masuk</a>
-                    <a href="signup.html" class="btn btn-light my-3 my-sm-0">Daftar</a>
-                </form>
-            </div>
-        </nav>
-    </header>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="image.html">Photo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vector.html">Vector</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="audio.html">Audio</a>
+                        </li>
+                        <ul class="primary">
+                            <li>
+                                <a href="" class="nav-link"> Ouch! &nbsp;<i class="fa fa-angle-down"></i></a>
+                                <ul class=" sub">
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="news.html">News</a>
+                                    </li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Article</a></li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Career</a></li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="idea.html">jdea</a>
+                                    </li>
+                                </ul>
+                            </li>
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <h2>DropKit</h2>
-            <div class="row">
-                <div class="col-lg-9 card-margin">
-                    <div class="card search-form">
-                        <div class="card-body p-0">
-                            <form id="search-form">
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="row no-gutters">
-                                            <div class="col-lg-2 col-md-2 col-sm-10 p-0">
-                                                <select class="form-control" id="exampleFormControlSelect1">
-                                                    <option>Photo</option>
-                                                    <option>Video</option>
-                                                    <option>Audio</option>
-                                                    <option>Vektor</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
-                                                <input type="text" placeholder="Search" class="form-control" id="search"
-                                                    name="search">
-                                            </div>
-                                            <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
-                                                <button type="submit" class="btn btn-base">
-                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                        stroke-linejoin="round" class="fab fa-search">
-                                                        <circle cx="11" cy="11" r="8"></circle>
-                                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                                    </svg>
-                                                </button>
-                                            </div>
+                        </ul>
+
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="login.html" class="btn btn-outline-light my-3 my-sm-0">Masuk</a>
+                        <a href="signup.html" class="btn btn-light my-3 my-sm-0">Daftar</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+
+        <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active" style="background-image: url('img/art.jpg')">
+                    <div class="banner">
+                        <div class="inner">
+
+                            <h2>DropKit</h2>
+                            <p>Kami menyediakan berbagai kebutuhan anda dalam dunia industri creative mulai dari photo,
+                                video,
+                                audio
+                                ,
+                                dll</p>
+                            <div class="row">
+                                <div class="col-lg-9 card-margin">
+                                    <div class="card search-form">
+                                        <div class="card-body p-0">
+                                            <form id="search-form">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-lg-2 col-md-2 col-sm-10 p-0">
+                                                                <select class=" custom-select btn-outline-secondary"
+                                                                    id="exampleFormControlSelect1">
+                                                                    <option>Photo</option>
+                                                                    <option>Video</option>
+                                                                    <option>Audio</option>
+                                                                    <option>Vektor</option>
+                                                                    <option>All</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
+                                                                <input type="text" placeholder="Search"
+                                                                    class="form-control" id="search" name="search">
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
+                                                                <button type="submit" class="btn btn-base">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                        fill="none" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" class="fab fa-search">
+                                                                        <circle cx="11" cy="11" r="8"></circle>
+                                                                        <line x1="21" y1="21" x2="16.65" y2="16.65">
+                                                                        </line>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item " style="background-image: url('img/sky.jpg')">
+                    <div class="banner">
+                        <div class="inner">
+
+                            <h2>DropKit</h2>
+                            <p>Kami menyediakan berbagai kebutuhan anda dalam dunia industri creative mulai dari photo,
+                                video,
+                                audio
+                                ,
+                                dll</p>
+                            <div class="row">
+                                <div class="col-lg-9 card-margin">
+                                    <div class="card search-form">
+                                        <div class="card-body p-0">
+                                            <form id="search-form">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-lg-2 col-md-2 col-sm-10 p-0">
+                                                                <select class=" custom-select btn-outline-secondary"
+                                                                    id="exampleFormControlSelect1">
+                                                                    <option>Photo</option>
+                                                                    <option>Video</option>
+                                                                    <option>Audio</option>
+                                                                    <option>Vektor</option>
+                                                                    <option>All</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
+                                                                <input type="text" placeholder="Search"
+                                                                    class="form-control" id="search" name="search">
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
+                                                                <button type="submit" class="btn btn-base">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                        fill="none" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" class="fab fa-search">
+                                                                        <circle cx="11" cy="11" r="8"></circle>
+                                                                        <line x1="21" y1="21" x2="16.65" y2="16.65">
+                                                                        </line>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item " style="background-image: url('img/forrest.jpg')">
+                    <div class="banner">
+                        <div class="inner">
+
+                            <h2>DropKit</h2>
+                            <p>Kami menyediakan berbagai kebutuhan anda dalam dunia industri creative mulai dari photo,
+                                video,
+                                audio
+                                ,
+                                dll</p>
+                            <div class="row">
+                                <div class="col-lg-9 card-margin">
+                                    <div class="card search-form">
+                                        <div class="card-body p-0">
+                                            <form id="search-form">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-lg-2 col-md-2 col-sm-10 p-0">
+                                                                <select class=" custom-select btn-outline-secondary"
+                                                                    id="exampleFormControlSelect1">
+                                                                    <option>Photo</option>
+                                                                    <option>Video</option>
+                                                                    <option>Audio</option>
+                                                                    <option>Vektor</option>
+                                                                    <option>All</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
+                                                                <input type="text" placeholder="Search"
+                                                                    class="form-control" id="search" name="search">
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
+                                                                <button type="submit" class="btn btn-base">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                        fill="none" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" class="fab fa-search">
+                                                                        <circle cx="11" cy="11" r="8"></circle>
+                                                                        <line x1="21" y1="21" x2="16.65" y2="16.65">
+                                                                        </line>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
-    </section>
+
+
+    </header>
     <!-- ads -->
     <div id="ads">
         <h4>Get 10 Photos for Free</h4>

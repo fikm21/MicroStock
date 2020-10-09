@@ -51,6 +51,124 @@ body {
     color: black;
 }
 
+.primary {
+    list-style: none;
+    position: relative;
+
+}
+
+.primary:after {
+    clear: both;
+}
+
+.primary:before,
+.primary:after {
+    content: " ";
+    display: table;
+}
+
+/* prime */
+ul.primary li a {
+    color: #d8d8d8;
+    font-size: 15px;
+    display: block;
+    margin-left: 25px;
+    text-decoration: none;
+
+
+}
+
+ul.primary li:last-child a {
+    border-right: none;
+}
+
+/* subs */
+ul.sub {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+ul.sub li {
+    float: left;
+    margin: 0;
+}
+
+ul.sub li a {
+    border-bottom: 2px solid orangered;
+    border-radius: 5px;
+    margin-top: 2px;
+    padding: 5px 150px 5px 15px;
+    background-color: rgb(238, 238, 238);
+    margin-left: 0px;
+    color: #000;
+}
+
+
+ul.sub li a:hover {
+    color: #272727;
+    background-color: #d1d1d1;
+
+}
+
+/* sub display*/
+ul.primary li:hover ul {
+    display: block;
+    color: white;
+    background-color: #66666600;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+/* keeps the tab background white */
+ul.primary li:hover {
+    color: white;
+
+    text-shadow: none;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    li {
+        float: none;
+    }
+
+    ul.primary li:hover a {
+        color: white;
+        background-color: #ebebeb;
+        text-shadow: 1px 1px #000;
+    }
+
+    ul.primary li:hover ul {
+        display: block;
+        color: white;
+        background-color: #66666665;
+    }
+
+    ul.sub {
+        display: block;
+        position: static;
+        box-shadow: none;
+        width: 100%;
+    }
+
+    ul.sub li a {
+        background: #272727;
+        border: none;
+        color: #8B8B8B;
+    }
+
+    ul.sub li a:hover {
+        color: #ccc;
+        background: none;
+    }
+}
+
 /* Banner */
 
 #banner {
