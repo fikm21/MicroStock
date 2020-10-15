@@ -9,16 +9,33 @@ body {
 }
 
 /* navbar */
+.my-nav {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+}
+
+.carousel-item {
+    height: 30vh;
+    background: no-repeat center center scroll;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.63);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 #header {
+    z-index: 10;
     width: 100%;
     position: absolute;
-
 }
 
 #header nav {
     margin-left: 25px;
     margin-right: 25px;
     padding: 10px;
+
 }
 
 #header nav .nav-link {
@@ -169,9 +186,12 @@ ul.primary li:hover {
     }
 }
 
+
+
+
 /* Banner */
 
-#banner {
+.banner {
     background-color: rgb(235, 235, 235);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.63);
     color: #d8d8d8;
@@ -180,7 +200,8 @@ ul.primary li:hover {
     height: 100px;
 }
 
-#banner:before {
+
+.banner:before {
     content: '';
     position: relative;
     left: 0;
@@ -190,47 +211,45 @@ ul.primary li:hover {
     background: rgba(64, 72, 80, 0.25);
 }
 
-#banner .inner {
+.banner .inner {
     position: relative;
     z-index: 1;
 }
 
-#banner .inner :last-child {
+.banner .inner :last-child {
     margin-bottom: 0;
 }
 
 
-#banner h2 {
+.banner h2 {
     font-size: 3.5em;
     line-height: 1em;
     margin: 0 0 0.5em 0;
     padding: 0;
 }
 
-#banner p {
+.banner p {
     font-size: 1.5em;
     margin-bottom: 2em;
 }
 
-#banner .row {
-
+.banner .row {
     width: auto;
     position: relative;
     justify-content: center;
     height: 50px;
 }
 
-#banner select {
+.banner select {
     height: 50px;
 }
 
-#banner input {
+.banner input {
     height: 50px;
 }
 
-#banner button {
+.banner button {
     height: 50px;
-    align-self: start;
 }
 
 /* card image */
