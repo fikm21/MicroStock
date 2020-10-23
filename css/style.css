@@ -24,6 +24,12 @@ body {
     background-size: cover;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 #header {
     z-index: 10;
     width: 100%;
@@ -325,6 +331,13 @@ ul.primary li:hover {
 
 }
 
+.more {
+    border-radius: 15px;
+    margin-top: auto;
+    font-weight: bold;
+    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
 .h1 {
     margin-top: 50px;
 }
@@ -450,9 +463,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #6e6e6e;
+    color: #d1d1d1;
 }
 
 footer a:hover {
-    color: #d1d1d1;
+    color: orange;
 }

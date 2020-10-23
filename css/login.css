@@ -1,3 +1,12 @@
+body {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.row {
+    margin-top: -10px;
+}
+
 .border-md {
     border-width: 2px;
 }
@@ -23,9 +32,7 @@
 }
 
 
-body {
-    min-height: 100vh;
-}
+
 
 .form-control:not(select) {
     padding: 1.5rem 0.5rem;

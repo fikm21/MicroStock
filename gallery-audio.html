@@ -13,100 +13,114 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/gallery-audio.css">
     <script src="/js/index.js"></script>
     <title>Hello</title>
 </head>
 
 <body>
-    <header id="header" class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand font-weight-bold" id="brand" href="index.html">DropKit</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <header>
+        <div class="header bg-dark" id="header">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand font-weight-bold" id="brand" href="index.html">DropKit</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link " href="image.html">Photo</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="vector.html">Vector</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="video.html">Video</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="audio.html">Audio</a>
-                    </li>
-                    <ul class="primary">
-                        <li>
-                            <a href="" class="nav-link"> Ouch! &nbsp;<i class="fa fa-angle-down"></i></a>
-                            <ul class=" sub">
-                                <li style="background-color: rgba(255, 255, 255, 0);"><a href="news.html">News</a></li>
-                                <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Article</a></li>
-                                <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Career</a></li>
-                                <li style="background-color: rgba(255, 255, 255, 0);"><a href="idea.html">jdea</a></li>
-                            </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="image.html">Photo</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link" href="vector.html">Vector</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="video.html">Video</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="audio.html">Audio</a>
+                        </li>
+                        <ul class="primary">
+                            <li>
+                                <a href="" class="nav-link"> Ouch! &nbsp;<i class="fa fa-angle-down"></i></a>
+                                <ul class=" sub">
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="news.html">News</a>
+                                    </li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Article</a></li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="#">Career</a></li>
+                                    <li style="background-color: rgba(255, 255, 255, 0);"><a href="idea.html">jdea</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
                     </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="login.html" class="btn btn-outline-light my-3 my-sm-0">Masuk</a>
+                        <a href="signup.html" class="btn btn-light my-3 my-sm-0">Daftar</a>
+                    </form>
+                </div>
+            </nav>
+        </div>
 
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <a href="pricing.html" class="nav-link">Pricing</a>
-                    <a href="login.html" class="btn btn-outline-light my-3 my-sm-0">Masuk</a>
-                    <a href="signup.html" class="btn btn-light my-3 my-sm-0">Daftar</a>
-                </form>
-            </div>
-        </nav>
-    </header>
-    <!-- search -->
 
-    <!-- Banner -->
-    <section id="banner">
-        <div class="inner">
-            <div class="row">
-                <div class="col-lg-11 card-margin">
-                    <div class="card search-form">
-                        <form id="search-form">
+        <div id="carouselExampleIndicators" class="carousel slide my-carousel my-carousel" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <div class="banner">
+                        <div class="inner">
+
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="row no-gutters">
-                                        <div class="col-lg-2 col-md-2 col-sm-10 p-0">
-                                            <select class="form-control" id="exampleFormControlSelect1">
-                                                <option>Photo</option>
-                                                <option>Video</option>
-                                                <option>Audio</option>
-                                                <option>Vektor</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
-                                            <input type="text" placeholder="Search" class="form-control" id="search"
-                                                name="search">
-                                        </div>
-                                        <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
-                                            <button type="submit" class="btn btn-base">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round" class="fab fa-search">
-                                                    <circle cx="11" cy="11" r="8"></circle>
-                                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                                </svg>
-                                            </button>
+                                <div class="col-lg-11 card-margin">
+                                    <div class="card search-form">
+                                        <div class="card-body p-0">
+                                            <form id="search-form">
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="row no-gutters">
+                                                            <div class="col-lg-2 col-md-2 col-sm-10 p-0">
+                                                                <select class=" custom-select btn-outline-secondary"
+                                                                    id="exampleFormControlSelect1">
+                                                                    <option>Photo</option>
+                                                                    <option>Video</option>
+                                                                    <option>Audio</option>
+                                                                    <option>Vektor</option>
+                                                                    <option>All</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="col-lg-9 col-md-8 col-sm-10 border-right-0 p-0">
+                                                                <input type="text" placeholder="Search"
+                                                                    class="form-control" id="search" name="search">
+                                                            </div>
+                                                            <div class="col-lg-1 col-md-2 col-sm-2 p-0 border-left-0">
+                                                                <button type="submit" class="btn btn-base">
+                                                                    <svg width="24" height="24" viewBox="0 0 24 24"
+                                                                        fill="none" stroke="currentColor"
+                                                                        stroke-width="2" stroke-linecap="round"
+                                                                        stroke-linejoin="round" class="fab fa-search">
+                                                                        <circle cx="11" cy="11" r="8"></circle>
+                                                                        <line x1="21" y1="21" x2="16.65" y2="16.65">
+                                                                        </line>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
-                        </form>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        </div>
-    </section>
+    </header>
     <!-- Jumbo Categori -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
@@ -118,44 +132,176 @@
     <!-- audio-gallery -->
     <div class="container">
         <div class="col-12">
-            <audio controls style="width: 1000px;" class=" mt-2">
-                <source src="/audio/Berlin at Night - Dan Henig.mp3" type="audio/mp3">
-                    <p>
-                        coba
-                    </p>
+            <audio controls  class=" mt-3">
+                <source src="/audio/Beside Me - Patrick Patrikios.mp3" type="audio/mp3">
+                   
             Your browser does not support the audio element.
             </audio>
-           
+            <div class="link-bpm">
+                <h6 >90 Bpm</h6>
+               
+            </div>
+            <div class="link-text">
+                <h6 class=" mb-1">Beside Me</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
         </div>
         <div class="col-12">
-            <audio controls style="width: 1000px;border-radius: 10px;" class=" mt-2">
+           
+            <audio controls  class=" mt-3">
                 <source src="/audio/Berlin at Night - Dan Henig.mp3" type="audio/mp3">
-                    <p>
-                        coba
-                    </p>
+                   
+            Your browser does not support the audio element.
+            </audio> 
+            <div class="link-text">
+                <h6 class=" mb-1">Berlin at Night</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
+        </div>
+    
+        <div class="col-12">
+            <audio controls  class=" mt-3">
+                <source src="/audio/Cold Water - Patrick Patrikios.mp3" type="audio/mp3">
+                   
             Your browser does not support the audio element.
             </audio>
-           
+            <div class="link-text">
+                <h6 class=" mb-1">Cold Water</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
         </div>
         <div class="col-12">
-            <audio controls style="width: 1000px;" class=" mt-2">
-                <source src="/audio/Berlin at Night - Dan Henig.mp3" type="audio/mp3">
-                    <p>
-                        coba
-                    </p>
+            <audio controls  class=" mt-3">
+                <source src="/audio/Beside Me - Patrick Patrikios.mp3" type="audio/mp3">
+                   
             Your browser does not support the audio element.
             </audio>
-           
+            <div class="link-text">
+                <h6 class=" mb-1">Beside Me</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
         </div>
         <div class="col-12">
-            <audio controls style="width: 1000px;" class=" mt-2">
+           
+            <audio controls  class=" mt-3">
                 <source src="/audio/Berlin at Night - Dan Henig.mp3" type="audio/mp3">
-                    <p>
-                        coba
-                    </p>
+                   
+            Your browser does not support the audio element.
+            </audio> 
+            <div class="link-text">
+                <h6 class=" mb-1">Berlin at Night</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
+        </div>
+    
+        <div class="col-12">
+            <audio controls  class=" mt-3">
+                <source src="/audio/Cold Water - Patrick Patrikios.mp3" type="audio/mp3">
+                   
             Your browser does not support the audio element.
             </audio>
+            <div class="link-text">
+                <h6 class=" mb-1">Cold Water</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
+        </div>
+         <div class="col-12">
+            <audio controls  class=" mt-3">
+                <source src="/audio/Beside Me - Patrick Patrikios.mp3" type="audio/mp3">
+                   
+            Your browser does not support the audio element.
+            </audio>
+            <div class="link-text">
+                <h6 class=" mb-1">Beside Me</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
+        </div>
+        <div class="col-12">
            
+            <audio controls  class=" mt-3">
+                <source src="/audio/Berlin at Night - Dan Henig.mp3" type="audio/mp3">
+                   
+            Your browser does not support the audio element.
+            </audio> 
+            <div class="link-text">
+                <h6 class=" mb-1">Berlin at Night</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
+        </div>
+    
+        <div class="col-12">
+            <audio controls  class=" mt-3">
+                <source src="/audio/Cold Water - Patrick Patrikios.mp3" type="audio/mp3">
+                   
+            Your browser does not support the audio element.
+            </audio>
+            <div class="link-text">
+                <h6 class=" mb-1">Cold Water</h6>
+                <p class="text-black-50">by <a href="" class=" text-decoration-none">Manusia</a></p>
+            </div>
+            <div class="link list-inline-item ">
+
+                <a href="" class="fa fa-heart  link-item save"></a>
+                <a href="" class="fa fa-download link-item "></a>
+                <a href="" class="fa fa-cart-arrow-down link-item "></a>
+                
+            </div>
         </div>
        
     </div>

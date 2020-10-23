@@ -740,9 +740,9 @@ footer {
 
 footer a {
     font-style: none;
-    color: #6e6e6e;
+    color: #d1d1d1;
 }
 
 footer a:hover {
-    color: #d1d1d1;
+    color: orange;
 }
